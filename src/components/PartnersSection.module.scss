@@ -1,0 +1,23 @@
+.partners {
+    padding: 4rem 0;
+    background-color: #fff;
+
+    .slick-slide {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
+
+    .slick-dots li button:before {
+        color: #e61c81;
+    }
+}

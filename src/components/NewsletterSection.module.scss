@@ -1,0 +1,27 @@
+@import '../styles/variable';
+
+.newsletter {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+
+    h4 {
+        color: $text-dark;
+    }
+
+    .formWrapper {
+        max-width: 100%;
+        margin-top: 2rem;
+
+        input[type='email'] {
+            height: 48px;
+            padding: 0 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            height: 48px;
+            white-space: nowrap;
+        }
+    }
+}

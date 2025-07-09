@@ -1,0 +1,37 @@
+@import '../styles/variable';
+
+.footer {
+    background-color: #f1f3f5;
+    padding: 3rem 0 1rem;
+
+    h6 {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 0.5rem;
+
+            a {
+                color: $text-dark;
+                text-decoration: none;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .bi {
+        font-size: 1.2rem;
+        color: $text-dark;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
