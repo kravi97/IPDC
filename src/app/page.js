@@ -2,7 +2,6 @@ import HeroSection from '@/components/HeroSection';
 import FeaturesSection from '@/components/FeaturesSection';
 import PartnersSection from '@/components/PartnersSection';
 import GlanceSection from '@/components/GlanceSection';
-import NewsLetterSection from '@/components/NewsLetterSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -10,10 +9,10 @@ export default function Home() {
     <>
       <HeroSection />
       <FeaturesSection />
-      <PartnersSection />
+      {/* <PartnersSection />
       <GlanceSection />
       <NewsLetterSection />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
