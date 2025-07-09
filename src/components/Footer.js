@@ -17,16 +17,16 @@ export default function Footer() {
                         </p>
                         <div className="d-flex gap-2 mt-3">
                             <a href="#" className={styles.iconLink}>
-                                <Image src="/facebook.png" alt="Facebook" width={32} height={32} />
+                                <Image src="/facebook.png" alt="Facebook" width={24} height={24} />
                             </a>
                             <a href="#" className={styles.iconLink}>
-                                <Image src="/youtube.png" alt="YouTube" width={32} height={32} />
+                                <Image src="/youtube.png" alt="YouTube" width={24} height={24} />
                             </a>
                             <a href="#" className={styles.iconLink}>
-                                <Image src="/linkedin.png" alt="LinkedIn" width={32} height={32} />
+                                <Image src="/linkedin.png" alt="LinkedIn" width={24} height={24} />
                             </a>
                             <a href="#" className={styles.iconLink}>
-                                <Image src="/instagram.png" alt="Instagram" width={32} height={32} />
+                                <Image src="/instagram.png" alt="Instagram" width={24} height={24} />
                             </a>
                         </div>
                     </Col>
