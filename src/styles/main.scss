@@ -1,0 +1,10 @@
+@import './variable';
+
+// main.scss
+$primary-color: #0056b3;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
