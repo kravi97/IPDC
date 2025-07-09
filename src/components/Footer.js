@@ -9,30 +9,69 @@ export default function Footer() {
         <footer className={styles.footer}>
             <Container>
                 <Row className="gy-4">
-                    <Col md={4}>
-                        <Image src="/logo.png" alt="Logo" width={120} height={40} />
-                        <p className="text-muted mt-3">
-                            A company with purpose and passion – enabling dreams.
+                    {/* About the company */}
+                    <Col md={3}>
+                        <h6 className="fw-bold mb-3">About the company</h6>
+                        <p className="text-muted" style={{ fontSize: '0.9rem', lineHeight: '1.6' }}>
+                            Learn To Love Growth And <span style={{ color: '#007bff' }}>Change</span> And You Will Be A Success. Microsoft Patch
                         </p>
+                        <div className="d-flex gap-2 mt-3">
+                            <a href="#" className={styles.iconLink}>
+                                <Image src="/facebook.png" alt="Facebook" width={32} height={32} />
+                            </a>
+                            <a href="#" className={styles.iconLink}>
+                                <Image src="/youtube.png" alt="YouTube" width={32} height={32} />
+                            </a>
+                            <a href="#" className={styles.iconLink}>
+                                <Image src="/linkedin.png" alt="LinkedIn" width={32} height={32} />
+                            </a>
+                            <a href="#" className={styles.iconLink}>
+                                <Image src="/instagram.png" alt="Instagram" width={32} height={32} />
+                            </a>
+                        </div>
                     </Col>
-                    <Col md={4}>
-                        <h6 className="fw-bold">Quick Links</h6>
+
+                    {/* Products */}
+                    <Col md={2}>
+                        <h6 className="fw-bold mb-3">Products</h6>
                         <ul className={styles.links}>
-                            <li><a href="#">Retail</a></li>
-                            <li><a href="#">SME</a></li>
-                            <li><a href="#">Corporate</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Campaigns</a></li>
+                            <li><a href="#" className="text-muted">CSR Activities</a></li>
+                            <li><a href="#" className="text-muted">Green Banking</a></li>
+                            <li><a href="#" className="text-muted">News</a></li>
+                            <li><a href="#" className="text-muted">Ongoing Campaign</a></li>
+                            <li><a href="#" className="text-muted">Updates</a></li>
                         </ul>
                     </Col>
-                    <Col md={4}>
-                        <h6 className="fw-bold">Contact</h6>
-                        <p className="text-muted mb-1">Phone: +880-123456789</p>
-                        <p className="text-muted mb-1">Email: info@ipdcbd.com</p>
-                        <div className="d-flex gap-3 mt-2">
-                            <a href="#"><i className="bi bi-facebook"></i></a>
-                            <a href="#"><i className="bi bi-twitter"></i></a>
-                            <a href="#"><i className="bi bi-linkedin"></i></a>
+
+                    {/* Get Started */}
+                    <Col md={2}>
+                        <h6 className="fw-bold mb-3">Get Started</h6>
+                        <ul className={styles.links}>
+                            <li><a href="#" className="text-muted">Career</a></li>
+                            <li><a href="#" className="text-muted">Contact Us</a></li>
+                            <li><a href="#" className="text-muted">Government Securities</a></li>
+                            <li><a href="#" className="text-muted">Examples</a></li>
+                            <li><a href="#" className="text-muted">NIS</a></li>
+                        </ul>
+                    </Col>
+
+                    {/* About */}
+                    <Col md={2}>
+                        <h6 className="fw-bold mb-3">About</h6>
+                        <ul className={styles.links}>
+                            <li><a href="#" className="text-muted">IPDC at a Glance</a></li>
+                            <li><a href="#" className="text-muted">Mission, Vision & Values</a></li>
+                            <li><a href="#" className="text-muted">Corporate Governance</a></li>
+                            <li><a href="#" className="text-muted">Shareholders</a></li>
+                            <li><a href="#" className="text-muted">Investor Relations</a></li>
+                        </ul>
+                    </Col>
+
+                    {/* Contact */}
+                    <Col md={3} className="text-end">
+                        <div className={styles.contactInfo}>
+                            <span className={styles.phoneIcon}>📞</span>
+                            <span className="fw-bold ms-2" style={{ color: '#e61c81', fontSize: '1.5rem' }}>16519</span>
                         </div>
                     </Col>
                 </Row>

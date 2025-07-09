@@ -34,4 +34,68 @@
             color: $primary-color;
         }
     }
+
+    .socialIcon {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            color: white;
+            text-decoration: none;
+        }
+
+        i {
+            font-size: 14px;
+        }
+    }
+
+    .contactInfo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .phoneIcon {
+        font-size: 1.5rem;
+    }
+
+    .links {
+        li {
+            margin-bottom: 0.7rem;
+
+            a {
+                font-size: 0.9rem;
+                line-height: 1.5;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .iconLink {
+        display: inline-block;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        border-radius: 8px;
+        overflow: hidden;
+
+        &:hover {
+            transform: translateY(-2px);
+            opacity: 0.8;
+        }
+
+        img {
+            display: block;
+        }
+    }
 }

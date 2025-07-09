@@ -44,19 +44,25 @@ export default function HeroSection() {
                             </Button>
                         </div>
 
-                        {/* Contact and Social Media Section */}
-                        <div className={styles.contactSection}>
-                            <div className="d-flex align-items-center gap-3">
-                                <div className="d-flex align-items-center gap-2">
-                                    <span className={styles.phoneIcon}>📞</span>
-                                    <span className="fw-bold" style={{ color: '#e61c81' }}>16519</span>
-                                </div>
-                                <div className="d-flex gap-2">
-                                    <a href="#" className={styles.socialIcon} style={{ backgroundColor: '#3b5998' }}>f</a>
-                                    <a href="#" className={styles.socialIcon} style={{ backgroundColor: '#1da1f2' }}>t</a>
-                                    <a href="#" className={styles.socialIcon} style={{ backgroundColor: '#ff0000' }}>▶</a>
-                                    <a href="#" className={styles.socialIcon} style={{ backgroundColor: '#e4405f' }}>📷</a>
-                                </div>
+                        {/* Contact and Social Media Icons */}
+                        <div className="d-flex align-items-center justify-content-center justify-content-md-start gap-3 mb-4">
+                            <div className="d-flex align-items-center gap-2">
+                                <Image src="/call.png" alt="Call" width={32} height={32} />
+                                <span className="fw-bold" style={{ color: '#e61c81', fontSize: '1.2rem' }}>16519</span>
+                            </div>
+                            <div className="d-flex gap-2 ms-3">
+                                <a href="#" className={styles.iconLink}>
+                                    <Image src="/facebook.png" alt="Facebook" width={32} height={32} />
+                                </a>
+                                <a href="#" className={styles.iconLink}>
+                                    <Image src="/youtube.png" alt="YouTube" width={32} height={32} />
+                                </a>
+                                <a href="#" className={styles.iconLink}>
+                                    <Image src="/linkedin.png" alt="LinkedIn" width={32} height={32} />
+                                </a>
+                                <a href="#" className={styles.iconLink}>
+                                    <Image src="/instagram.png" alt="Instagram" width={32} height={32} />
+                                </a>
                             </div>
                         </div>
                     </Col>

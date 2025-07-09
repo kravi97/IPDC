@@ -93,6 +93,22 @@
     }
 }
 
+.iconLink {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &:hover {
+        transform: translateY(-2px);
+        opacity: 0.8;
+    }
+
+    img {
+        display: block;
+    }
+}
+
 // Responsive styles
 @media (max-width: 768px) {
     .badges {
