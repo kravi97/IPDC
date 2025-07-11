@@ -44,7 +44,7 @@ export default function HeroSection() {
                                     <li className="nav-item"><a className="nav-link" href="#" style={{ color: '#010101', fontFamily: 'Metropolis, sans-serif', fontWeight: '600', fontSize: '12px', lineHeight: '20px', letterSpacing: '2px', textTransform: 'uppercase' }}>Campaigns</a></li>
                                 </ul>
 
-                                <div className="d-flex align-items-center gap-2 justify-content-end">
+                                <div className="d-flex align-items-center gap-4 justify-content-end">
                                     <Image src="/Magnifier.png" alt="Search" width={20} height={20} className={styles.magnifierIcon} />
                                     <Button
                                         className="btn btn-primary"
@@ -53,16 +53,19 @@ export default function HeroSection() {
                                             border: 'none',
                                             borderRadius: '4px',
                                             padding: '8px 20px',
-                                            fontSize: '14px',
-                                            fontWeight: '600',
-                                            width: '108px',
-                                            height: '36px',
+                                            fontSize: '12px',
+                                            fontWeight: '500',
+                                            // width: '108px',
+                                            // height: '36px',
                                             display: 'flex',
                                             alignItems: 'center',
-                                            justifyContent: 'center'
+                                            justifyContent: 'center',
+                                            fontFamily: 'Rubik, sans-serif',
+                                            letterSpacing: '2px',
+                                            lineHeight: '20px',
                                         }}
                                     >
-                                        iService
+                                        iSERVICE
                                     </Button>
                                 </div>
                             </div>
@@ -140,11 +143,11 @@ export default function HeroSection() {
                                 <div className={styles.badges}>
                                     <div className={`${styles.badge} ${styles.carLoan}`}>
                                         <Image src="/car.png" alt="Car" width={20} height={20} />
-                                        Car Loans
+                                        <span style={{ color: '#343434', fontFamily: 'Metropolis, sans-serif', fontWeight: '700' }}>Car Loans</span>
                                     </div>
                                     <div className={`${styles.badge} ${styles.homeLoan}`}>
                                         <Image src="/House.png" alt="Home" width={20} height={20} />
-                                        Home Loan
+                                        <span style={{ color: '#343434', fontFamily: 'Metropolis, sans-serif', fontWeight: '700' }}>Home Loan</span>
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +161,7 @@ export default function HeroSection() {
                                 <Image src="/call.png" alt="Call" width={18} height={18} />
                                 <span className="fw-bold" style={{ color: '#010101', fontSize: 'clamp(15px, 3vw, 17px)' }}>16519</span>
                             </div>
-                            <span className='text-muted' >|</span>
+                            <span style={{ color: '#CCCCCC' }} >|</span>
                             <div className="d-flex gap-2">
                                 <a href="#" className={styles.iconLink}>
                                     <Image src="/facebook.png" alt="Facebook" width={18} height={18} />
