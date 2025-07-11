@@ -17,16 +17,16 @@ export default function Footer() {
                         </p>
                         <div className="d-flex gap-2 mt-3">
                             <a href="#" className={styles.iconLink}>
-                                <Image src="/facebook.png" alt="Facebook" width={24} height={24} />
+                                <Image src="/facebook.png" alt="Facebook" width={18} height={18} />
                             </a>
                             <a href="#" className={styles.iconLink}>
-                                <Image src="/youtube.png" alt="YouTube" width={24} height={24} />
+                                <Image src="/youtube.png" alt="YouTube" width={18} height={18} />
                             </a>
                             <a href="#" className={styles.iconLink}>
-                                <Image src="/linkedin.png" alt="LinkedIn" width={24} height={24} />
+                                <Image src="/linkedin.png" alt="LinkedIn" width={18} height={18} />
                             </a>
                             <a href="#" className={styles.iconLink}>
-                                <Image src="/instagram.png" alt="Instagram" width={24} height={24} />
+                                <Image src="/instagram.png" alt="Instagram" width={18} height={18} />
                             </a>
                         </div>
                     </Col>
@@ -69,9 +69,9 @@ export default function Footer() {
 
                     {/* Contact */}
                     <Col md={3} className="text-end">
-                        <div className={styles.contactInfo}>
-                            <span className={styles.phoneIcon}>📞</span>
-                            <span className="fw-bold ms-2" style={{ color: '#e61c81', fontSize: '1.5rem' }}>16519</span>
+                        <div className="d-flex align-items-center gap-2">
+                            <Image src="/call.png" alt="Call" width={18} height={18} />
+                            <span className="fw-bold" style={{ color: '#010101', fontSize: 'clamp(15px, 3vw, 17px)' }}>16519</span>
                         </div>
                     </Col>
                 </Row>

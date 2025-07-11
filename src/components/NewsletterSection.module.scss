@@ -10,16 +10,52 @@
         max-width: 100%;
         margin-top: 2rem;
 
-        input[type='email'] {
-            height: 48px;
-            padding: 0 1rem;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+        .inputGroup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
-        button {
-            height: 48px;
+        .emailInput {
+            height: 46px;
+            width: 343px;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+            font-size: 14px;
+            outline: none;
+            flex: 1;
+
+            &::placeholder {
+                color: #999;
+            }
+        }
+
+        .subscribeBtn {
+            height: 46px;
+            padding: 12px 24px;
+            background-color: #e61c81;
+            border: 1px solid #e61c81;
+            border-radius: 4px;
+            color: white;
+            font-weight: 600;
+            font-size: 12px;
+            letter-spacing: 0.5px;
             white-space: nowrap;
+            cursor: pointer;
+            outline: none;
+
+            &:hover {
+                background-color: #d1176e;
+            }
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 }

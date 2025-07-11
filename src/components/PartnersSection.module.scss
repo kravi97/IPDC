@@ -1,23 +1,53 @@
-.partners {
-    padding: 4rem 0;
-    background-color: #fff;
+.partnersSection {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
 
-    .slick-slide {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-    }
+    .partnersCarousel {
+        text-align: center;
 
-    img {
-        filter: grayscale(100%);
-        transition: filter 0.3s ease;
+        .partnersTrack {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
 
-        &:hover {
-            filter: grayscale(0%);
+            @media (max-width: 768px) {
+                gap: 2rem;
+            }
         }
-    }
 
-    .slick-dots li button:before {
-        color: #e61c81;
+        .partnerLogo {
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .carouselDots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+
+            .dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #ddd;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &.active {
+                    background-color: #e61c81;
+                }
+
+                &:hover {
+                    background-color: #f085b1;
+                }
+            }
+        }
     }
 }

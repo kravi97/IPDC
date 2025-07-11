@@ -11,25 +11,25 @@ export default function NewsletterSection() {
                     <Col lg={8}>
                         <h4 className="fw-bold">Newsletter</h4>
                         <p className="text-muted mb-4">
-                            Stay updated with our latest news and offerings. Subscribe to our newsletter today!
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etget ac quis aliquam arcu lacus.
                         </p>
 
                         <Form className={styles.formWrapper}>
-                            <Form.Group className="d-flex flex-column flex-md-row gap-3" controlId="formNewsletter">
-                                <Form.Control
+                            <div className={styles.inputGroup}>
+                                <input
                                     type="email"
-                                    placeholder="Enter your email address"
-                                    className="flex-grow-1"
+                                    placeholder="Your email"
+                                    className={styles.emailInput}
                                     required
                                 />
-                                <Button
+                                <button
                                     type="submit"
-                                    className="px-4 py-2"
-                                    style={{ backgroundColor: '#e61c81', border: 'none' }}
+                                    style={{ fontFamily: 'Metropolis, sans-serif' }}
+                                    className={styles.subscribeBtn}
                                 >
-                                    Subscribe
-                                </Button>
-                            </Form.Group>
+                                    SUBSCRIBE
+                                </button>
+                            </div>
                         </Form>
                     </Col>
                 </Row>
