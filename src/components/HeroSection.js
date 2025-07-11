@@ -16,61 +16,52 @@ export default function HeroSection() {
         <div className={styles.heroBg}>
             <section className={styles.hero}>
                 <div className={styles.navbar}>
-                    <Container>
-                        <nav className="navbar navbar-expand-lg navbar-light py-3">
-                            <div className="navbar-brand">
-                                <Image src="/nav-left-image.png" alt="Logo" width={120} height={40} />
+                    <div className={styles.navbarCustomContainer}>
+                        <div className={styles.navbarBrand}>
+                            <Image src="/nav-left-image.png" alt="Logo" width={120} height={40} />
+                        </div>
+                        <button
+                            className={styles.navbarToggler}
+                            type="button"
+                            onClick={toggleNav}
+                            aria-controls="navbarNav"
+                            aria-expanded={isNavOpen}
+                            aria-label="Toggle navigation"
+                        >
+                            <span className={styles.navbarTogglerIcon}></span>
+                        </button>
+                        <div className={`${styles.navbarCollapse} ${isNavOpen ? styles.show : ''}`} id="navbarNav">
+                            <ul className={styles.navbarNav}>
+                                <li><a href="#" className={styles.navLink}>Retail</a></li>
+                                <li><a href="#" className={styles.navLink}>SME</a></li>
+                                <li><a href="#" className={styles.navLink}>Corporate</a></li>
+                                <li><a href="#" className={styles.navLink}>About Us</a></li>
+                                <li><a href="#" className={styles.navLink}>COVID 19</a></li>
+                                <li><a href="#" className={styles.navLink}>Campaigns</a></li>
+                            </ul>
+                            <div className={styles.navbarActions}>
+                                <Image src="/Magnifier.png" alt="Search" width={20} height={20} className={styles.magnifierIcon} />
+                                <Button
+                                    style={{
+                                        backgroundColor: '#ED017F',
+                                        border: 'none',
+                                        borderRadius: '4px',
+                                        padding: '8px 20px',
+                                        fontSize: '12px',
+                                        fontWeight: '500',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        fontFamily: 'Rubik, sans-serif',
+                                        letterSpacing: '2px',
+                                        lineHeight: '20px',
+                                    }}
+                                >
+                                    iSERVICE
+                                </Button>
                             </div>
-
-                            {/* Mobile hamburger button */}
-                            <button
-                                className="navbar-toggler"
-                                type="button"
-                                onClick={toggleNav}
-                                aria-controls="navbarNav"
-                                aria-expanded={isNavOpen}
-                                aria-label="Toggle navigation"
-                            >
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
-
-                            <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNav">
-                                <ul className="navbar-nav mx-auto">
-                                    <li className="nav-item"><a className="nav-link" href="#" style={{ color: '#010101', fontFamily: 'Metropolis, sans-serif', fontWeight: '600', fontSize: '12px', lineHeight: '20px', letterSpacing: '2px', textTransform: 'uppercase' }}>Retail</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="#" style={{ color: '#010101', fontFamily: 'Metropolis, sans-serif', fontWeight: '600', fontSize: '12px', lineHeight: '20px', letterSpacing: '2px', textTransform: 'uppercase' }}>SME</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="#" style={{ color: '#010101', fontFamily: 'Metropolis, sans-serif', fontWeight: '600', fontSize: '12px', lineHeight: '20px', letterSpacing: '2px', textTransform: 'uppercase' }}>Corporate</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="#" style={{ color: '#010101', fontFamily: 'Metropolis, sans-serif', fontWeight: '600', fontSize: '12px', lineHeight: '20px', letterSpacing: '2px', textTransform: 'uppercase' }}>About Us</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="#" style={{ color: '#010101', fontFamily: 'Metropolis, sans-serif', fontWeight: '600', fontSize: '12px', lineHeight: '20px', letterSpacing: '2px', textTransform: 'uppercase' }}>COVID 19</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="#" style={{ color: '#010101', fontFamily: 'Metropolis, sans-serif', fontWeight: '600', fontSize: '12px', lineHeight: '20px', letterSpacing: '2px', textTransform: 'uppercase' }}>Campaigns</a></li>
-                                </ul>
-
-                                <div className="d-flex align-items-center gap-4 justify-content-end">
-                                    <Image src="/Magnifier.png" alt="Search" width={20} height={20} className={styles.magnifierIcon} />
-                                    <Button
-                                        className="btn btn-primary"
-                                        style={{
-                                            backgroundColor: '#ED017F',
-                                            border: 'none',
-                                            borderRadius: '4px',
-                                            padding: '8px 20px',
-                                            fontSize: '12px',
-                                            fontWeight: '500',
-                                            // width: '108px',
-                                            // height: '36px',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            fontFamily: 'Rubik, sans-serif',
-                                            letterSpacing: '2px',
-                                            lineHeight: '20px',
-                                        }}
-                                    >
-                                        iSERVICE
-                                    </Button>
-                                </div>
-                            </div>
-                        </nav>
-                    </Container>
+                        </div>
+                    </div>
                 </div>
 
                 <Container className={styles.heroContent}>

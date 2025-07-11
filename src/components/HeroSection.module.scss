@@ -1,7 +1,152 @@
+// Navbar Custom Styles
+.navbarCustomContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    min-height: 80px;
+    background: transparent;
+}
+
+.navbarBrand {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.navbarToggler {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.navbarTogglerIcon {
+    width: 24px;
+    height: 2px;
+    background: #010101;
+    display: block;
+    position: relative;
+}
+
+.navbarTogglerIcon::before,
+.navbarTogglerIcon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #010101;
+}
+
+.navbarTogglerIcon::before {
+    top: -8px;
+}
+
+.navbarTogglerIcon::after {
+    top: 8px;
+}
+
+.navbarCollapse {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: center;
+    transition: none;
+}
+
+.navbarCollapse.show {
+    display: flex;
+}
+
+.navbarNav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navLink {
+    color: #010101;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.2s;
+    padding: 0 4px;
+}
+
+.navLink:hover,
+.navLink:focus {
+    color: #ED017F;
+}
+
+.navbarActions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: 32px;
+}
+
+.magnifierIcon {
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .navbarCustomContainer {
+        flex-direction: row;
+        padding: 0 12px;
+    }
+
+    .navbarCollapse {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100vw;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+        z-index: 100;
+        padding: 24px 0 16px 0;
+    }
+
+    .navbarCollapse.show {
+        display: flex;
+    }
+
+    .navbarNav {
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+        align-items: flex-start;
+        padding-left: 32px;
+    }
+
+    .navbarActions {
+        margin-left: 0;
+        margin-top: 16px;
+        padding-left: 32px;
+    }
+
+    .navbarToggler {
+        display: block;
+    }
+}
+
 .heroBg {
-    background: linear-gradient(90deg, #fff 55%, #ffe6f3 55%);
+    background: linear-gradient(90deg, #fff 54.5%, #ffe6f3 54.5%);
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -13,8 +158,8 @@
 
 .navbar {
     border-bottom: 1px solid rgba(238, 238, 238, 0.3);
-    background-color: transparent;
-    backdrop-filter: blur(5px);
+    background: transparent !important;
+    backdrop-filter: none !important;
 
     :global(.navbar) {
         padding: 0;
