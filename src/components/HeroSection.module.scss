@@ -2,7 +2,7 @@
 .navbarCustomContainer {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    align-items: center;
+    align-items: center; // ensure vertical centering
     padding: 0 32px;
     min-height: 80px;
     background: transparent;
@@ -10,8 +10,27 @@
 
 .navbarBrand {
     display: flex;
-    align-items: center;
+    align-items: center; // ensure vertical centering
     flex: 0 0 auto;
+    margin-top: 0; // remove top margin for centering
+    padding-bottom: 0;
+    height: auto;
+}
+
+@media (min-width: 992px) {
+    .navbarBrand {
+        align-items: center;
+        padding-bottom: 0;
+        margin-top: 0; // remove top margin for centering
+    }
+}
+
+// Fine-tune logo image alignment
+.navbarBrand img {
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+    max-height: 48px;
 }
 
 .navbarToggler {
@@ -64,7 +83,7 @@
 .navbarNav {
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 32px;
     list-style: none;
     margin: 0 auto;
     padding: 0;
@@ -145,7 +164,7 @@
 }
 
 .heroBg {
-    background: linear-gradient(90deg, #fff 54.5%, #ffe6f3 54.5%);
+    background: linear-gradient(90deg, #fff 56.5%, #ffe6f3 54.5%);
     width: 100vw;
     overflow-x: hidden;
 }
@@ -551,3 +570,5 @@
 .heroContent>.row:last-child {
     margin-bottom: 0 !important;
 }
+
+// The logo is now vertically centered with the hero text

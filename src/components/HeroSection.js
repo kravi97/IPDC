@@ -13,12 +13,12 @@ export default function HeroSection() {
     };
 
     return (
-        <div className={styles.heroBg} style={{overflowX: 'hidden'}}>
+        <div className={styles.heroBg} style={{ overflowX: 'hidden' }}>
             <section className={styles.hero}>
                 <nav className={styles.navbar} role="navigation" aria-label="Main Navigation">
                     <div className={styles.navbarCustomContainer}>
                         <div className={styles.navbarBrand}>
-                            <Image src="/nav-left-image.png" alt="Logo" width={120} height={40} />
+                            <Image src="/nav-left-image.png" alt="Logo" width={120} height={40} style={{ marginLeft: '95px' }} />
                         </div>
                         <button
                             className={styles.navbarToggler}
