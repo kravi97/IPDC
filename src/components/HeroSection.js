@@ -139,11 +139,11 @@ export default function HeroSection() {
                                 {/* Floating Badges */}
                                 <div className={styles.badges}>
                                     <div className={`${styles.badge} ${styles.carLoan}`}>
-                                        <Image src="/file.svg" alt="Car" width={20} height={20} />
+                                        <Image src="/car.png" alt="Car" width={20} height={20} />
                                         Car Loans
                                     </div>
                                     <div className={`${styles.badge} ${styles.homeLoan}`}>
-                                        <Image src="/file.svg" alt="Home" width={20} height={20} />
+                                        <Image src="/house.png" alt="Home" width={20} height={20} />
                                         Home Loan
                                     </div>
                                 </div>
