@@ -1,11 +1,16 @@
 @import '../styles/_variable';
 
+.heroBg {
+  background: linear-gradient(90deg, #fff 50%, #ffe6f3 50%);
+  min-height: 100vh;
+  width: 100%;
+}
+
 .hero {
     padding-bottom: 2rem;
     min-height: 85vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(90deg, #fff 55%, #FFEAF5 100%);
 }
 
 .navbar {
@@ -94,41 +99,46 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     pointer-events: none;
+    z-index: 2;
+}
 
-    .badge {
-        position: absolute;
-        background: #fff;
-        padding: 12px 20px;
-        border-radius: 25px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        font-weight: 600;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        pointer-events: auto;
-        transition: transform 0.3s ease;
+.badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 28px 12px 18px;
+    pointer-events: auto;
+    transition: transform 0.2s;
+    border: none;
+}
 
-        &:hover {
-            transform: translateY(-2px);
-        }
+.carLoan {
+    top: 30px;
+    left: -40px;
+    background: #fff;
+    color: #e61c81;
+    border: 2px solid #fff;
+}
 
-        &.carLoan {
-            top: 10%;
-            right: -15%;
-            background: #fff;
-            color: #e61c81;
-            border: 2px solid #e61c81;
-        }
+.homeLoan {
+    top: 110px;
+    right: -30px;
+    background: #fff;
+    color: #e61c81;
+    border: 2px solid #fff;
+}
 
-        &.homeLoan {
-            bottom: 15%;
-            right: 0%;
-            background: #e61c81;
-            color: #fff;
-        }
-    }
+.badge img {
+    display: block;
 }
 
 .contactSection {
