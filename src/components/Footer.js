@@ -8,14 +8,14 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <Container>
-                <Row className="gy-4">
-                    {/* About the company */}
-                    <Col md={3}>
+                <Row className="gy-4 align-items-start">
+                    {/* About the company style={{ fontFamily: 'Metropolis', fontWeight: '400', fontSize: '14px' }}*/}
+                    <Col lg={2} md={6} sm={12}>
                         <h6 className="fw-bold mb-3">About the company</h6>
-                        <p className="text-muted" style={{ fontSize: '0.9rem', lineHeight: '1.6' }}>
-                            Learn To Love Growth And <span style={{ color: '#007bff' }}>Change</span> And You Will Be A Success. Microsoft Patch
+                        <p className="text-muted mb-4" style={{ fontFamily: 'Metropolis', fontWeight: '400', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                            Learn To Love Growth And Change And You Will Be A Success. Microsoft Patch
                         </p>
-                        <div className="d-flex gap-2 mt-3">
+                        <div style={{ paddingTop: '18%' }} className="d-flex gap-3 align-items-center">
                             <a href="#" className={styles.iconLink}>
                                 <Image src="/facebook.png" alt="Facebook" width={18} height={18} />
                             </a>
@@ -32,7 +32,7 @@ export default function Footer() {
                     </Col>
 
                     {/* Products */}
-                    <Col md={2}>
+                    <Col lg={2} md={3} sm={6}>
                         <h6 className="fw-bold mb-3">Products</h6>
                         <ul className={styles.links}>
                             <li><a href="#" className="text-muted">CSR Activities</a></li>
@@ -44,7 +44,7 @@ export default function Footer() {
                     </Col>
 
                     {/* Get Started */}
-                    <Col md={2}>
+                    <Col lg={2} md={3} sm={6}>
                         <h6 className="fw-bold mb-3">Get Started</h6>
                         <ul className={styles.links}>
                             <li><a href="#" className="text-muted">Career</a></li>
@@ -56,7 +56,7 @@ export default function Footer() {
                     </Col>
 
                     {/* About */}
-                    <Col md={2}>
+                    <Col lg={2} md={6} sm={6}>
                         <h6 className="fw-bold mb-3">About</h6>
                         <ul className={styles.links}>
                             <li><a href="#" className="text-muted">IPDC at a Glance</a></li>
@@ -68,17 +68,17 @@ export default function Footer() {
                     </Col>
 
                     {/* Contact */}
-                    <Col md={3} className="text-end">
-                        <div className="d-flex align-items-center gap-2">
+                    <Col lg={3} md={6} sm={6}>
+                        <div className="d-flex align-items-center justify-content-lg-end justify-content-start gap-2">
                             <Image src="/call.png" alt="Call" width={18} height={18} />
                             <span className="fw-bold" style={{ color: '#010101', fontSize: 'clamp(15px, 3vw, 17px)' }}>16519</span>
                         </div>
                     </Col>
                 </Row>
 
-                <div className="text-center mt-4 pt-3 border-top">
+                {/* <div className="text-center mt-4 pt-3 border-top">
                     <p className="text-muted small mb-0">&copy; {new Date().getFullYear()} IPDC Finance Ltd. All rights reserved.</p>
-                </div>
+                </div> */}
             </Container>
         </footer>
     );
