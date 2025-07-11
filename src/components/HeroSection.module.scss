@@ -1,7 +1,7 @@
 @import '../styles/_variable';
 
 .heroBg {
-    background: linear-gradient(90deg, #fff 50%, #ffe6f3 50%);
+    background: linear-gradient(90deg, #fff 55%, #ffe6f3 55%);
     min-height: 100vh;
     width: 100%;
 }
@@ -88,11 +88,13 @@
 .imageContainer {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 0;
     margin: 1rem 0;
+    width: 100%;
+    max-width: 100%;
 }
 
 .badges {
@@ -119,14 +121,17 @@
     pointer-events: auto;
     transition: transform 0.2s;
     border: none;
+    white-space: nowrap;
+    font-family: 'Metropolis', sans-serif;
 }
 
 .carLoan {
     top: 30px;
-    left: -85px;
+    left: -12px;
     background: #fff;
     color: #e61c81;
     border: 2px solid #fff;
+    z-index: 10;
 }
 
 .homeLoan {
@@ -135,6 +140,7 @@
     background: #fff;
     color: #e61c81;
     border: 2px solid #fff;
+    z-index: 10;
 }
 
 .badge img {

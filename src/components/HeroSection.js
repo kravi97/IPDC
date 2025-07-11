@@ -135,7 +135,7 @@ export default function HeroSection() {
                         </Col>
                         <Col md={6} className="position-relative mt-5 mt-md-0 text-center">
                             <div className={styles.imageContainer}>
-                                <Image src="/family.png" alt="Family" width={883} height={654} className="img-fluid" style={{ maxWidth: '100%', height: 'auto' }} />
+                                <Image src="/family.png" alt="Family" width={883} height={654} className="img-fluid" style={{ maxWidth: '100%', height: 'auto', objectFit: 'cover' }} />
                                 {/* Floating Badges */}
                                 <div className={styles.badges}>
                                     <div className={`${styles.badge} ${styles.carLoan}`}>
@@ -143,7 +143,7 @@ export default function HeroSection() {
                                         Car Loans
                                     </div>
                                     <div className={`${styles.badge} ${styles.homeLoan}`}>
-                                        <Image src="/house.png" alt="Home" width={20} height={20} />
+                                        <Image src="/House.png" alt="Home" width={20} height={20} />
                                         Home Loan
                                     </div>
                                 </div>
