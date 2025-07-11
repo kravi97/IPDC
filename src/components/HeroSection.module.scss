@@ -1,8 +1,8 @@
 // Navbar Custom Styles
 .navbarCustomContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: space-between;
     padding: 0 32px;
     min-height: 80px;
     background: transparent;
@@ -66,7 +66,7 @@
     align-items: center;
     gap: 32px;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -92,7 +92,8 @@
     display: flex;
     align-items: center;
     gap: 18px;
-    margin-left: 32px;
+    justify-self: end;
+    margin-left: 0;
 }
 
 .magnifierIcon {
@@ -377,6 +378,7 @@
         flex-direction: column;
         align-items: flex-end;
         gap: 10px;
+
         .badge {
             position: static;
             font-size: 12px;
@@ -389,6 +391,7 @@
     .imageContainer {
         margin-top: 2rem;
         padding: 0 1rem;
+
         img {
             max-width: 100% !important;
             height: auto !important;
@@ -434,6 +437,7 @@
         max-height: calc(100vh - 80px);
         overflow-y: auto;
     }
+
     .navbarCollapse.show {
         display: flex;
     }
@@ -465,16 +469,19 @@
         pointer-events: none;
         z-index: 2;
     }
+
     .badge {
         position: absolute;
         pointer-events: auto;
         margin: 0;
     }
+
     .carLoan {
         top: 18%;
         left: 5%;
         right: auto;
     }
+
     .homeLoan {
         top: 45%;
         right: 8%;
@@ -495,12 +502,14 @@
         gap: 12px;
         margin-top: 1rem;
     }
+
     .badge {
         position: static !important;
         margin: 0;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 }
+
 @media (max-width: 576px) {
     .badges {
         flex-direction: column;
@@ -520,6 +529,7 @@
         flex-direction: column;
         align-items: center;
     }
+
     .img-fluid {
         max-width: 100% !important;
         height: auto !important;
@@ -531,11 +541,12 @@
     min-height: unset;
     padding-bottom: 0.5rem;
 }
+
 .heroContent {
     padding-bottom: 0.5rem;
 }
 
 // Remove extra margin from last row
-.heroContent > .row:last-child {
+.heroContent>.row:last-child {
     margin-bottom: 0 !important;
 }
