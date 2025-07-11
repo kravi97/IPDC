@@ -144,14 +144,19 @@
 
 .heroBg {
     background: linear-gradient(90deg, #fff 54.5%, #ffe6f3 54.5%);
-    min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
 }
 
+// Responsive background for mobile
+@media (max-width: 576px) {
+    .heroBg {
+        background: #fff;
+    }
+}
+
 .hero {
-    padding-bottom: 2rem;
-    min-height: 85vh;
+    padding-bottom: 0.5rem;
     position: relative;
     overflow: hidden;
 }
@@ -368,25 +373,22 @@
     }
 
     .badges {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
         .badge {
+            position: static;
             font-size: 12px;
             padding: 8px 16px;
-
-            &.carLoan {
-                top: 10%;
-                right: -5%;
-            }
-
-            &.homeLoan {
-                bottom: 15%;
-                right: 10%;
-            }
+            margin-right: 0;
+            margin-bottom: 8px;
         }
     }
 
     .imageContainer {
         margin-top: 2rem;
-
+        padding: 0 1rem;
         img {
             max-width: 100% !important;
             height: auto !important;
@@ -411,7 +413,29 @@
 
     .imageContainer {
         margin-top: 1.5rem;
-        padding: 0 1rem;
+        padding: 0 0.5rem;
+    }
+}
+
+// Navbar overlay and scrollable on mobile
+@media (max-width: 991px) {
+    .navbarCollapse {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100vw;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+        z-index: 1000;
+        padding: 24px 0 16px 0;
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+    }
+    .navbarCollapse.show {
+        display: flex;
     }
 }
 
@@ -428,4 +452,90 @@
             padding: 10px 18px;
         }
     }
+}
+
+// Desktop: Absolutely position badges over the image, using percentage values
+@media (min-width: 992px) {
+    .badges {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 2;
+    }
+    .badge {
+        position: absolute;
+        pointer-events: auto;
+        margin: 0;
+    }
+    .carLoan {
+        top: 18%;
+        left: 5%;
+        right: auto;
+    }
+    .homeLoan {
+        top: 45%;
+        right: 8%;
+        left: auto;
+    }
+}
+
+// Tablet/mobile: Stack badges below image, centered, remove absolute positioning
+@media (max-width: 991px) {
+    .badges {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-top: 1rem;
+    }
+    .badge {
+        position: static !important;
+        margin: 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+}
+@media (max-width: 576px) {
+    .badges {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 0.5rem;
+    }
+}
+
+// Ensure image and text columns never overlap
+@media (max-width: 991px) {
+    .imageContainer {
+        margin-top: 2rem;
+        padding: 0 1rem;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-fluid {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+// Reduce excessive space after social icons
+.hero {
+    min-height: unset;
+    padding-bottom: 0.5rem;
+}
+.heroContent {
+    padding-bottom: 0.5rem;
+}
+
+// Remove extra margin from last row
+.heroContent > .row:last-child {
+    margin-bottom: 0 !important;
 }

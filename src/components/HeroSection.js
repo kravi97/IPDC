@@ -13,9 +13,9 @@ export default function HeroSection() {
     };
 
     return (
-        <div className={styles.heroBg}>
+        <div className={styles.heroBg} style={{overflowX: 'hidden'}}>
             <section className={styles.hero}>
-                <div className={styles.navbar}>
+                <nav className={styles.navbar} role="navigation" aria-label="Main Navigation">
                     <div className={styles.navbarCustomContainer}>
                         <div className={styles.navbarBrand}>
                             <Image src="/nav-left-image.png" alt="Logo" width={120} height={40} />
@@ -26,7 +26,7 @@ export default function HeroSection() {
                             onClick={toggleNav}
                             aria-controls="navbarNav"
                             aria-expanded={isNavOpen}
-                            aria-label="Toggle navigation"
+                            aria-label="Toggle navigation menu"
                         >
                             <span className={styles.navbarTogglerIcon}></span>
                         </button>
@@ -62,7 +62,7 @@ export default function HeroSection() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </nav>
 
                 <Container className={styles.heroContent}>
                     <Row className="align-items-center">
@@ -77,7 +77,7 @@ export default function HeroSection() {
                                 maxWidth: '100%'
                             }}>Chase Your Dream with us</h1>
                             <p className="text-muted mt-3 mb-4" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.1rem)' }}>The harder you work for something, the greater you'll feel when you achieve it.</p>
-                            <div className="mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start mb-5">
+                            <div className="mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
                                 <Button
                                     className="btn btn-danger"
                                     style={{
@@ -130,13 +130,13 @@ export default function HeroSection() {
                         <Col md={6} className="position-relative mt-5 mt-md-0 text-center">
                             <div className={styles.imageContainer}>
                                 <Image src="/family.png" alt="Family" width={883} height={654} className="img-fluid" style={{ maxWidth: '100%', height: 'auto', objectFit: 'cover' }} />
-                                {/* Floating Badges */}
+                                {/* Floating Badges - now responsive */}
                                 <div className={styles.badges}>
-                                    <div className={`${styles.badge} ${styles.carLoan}`}>
+                                    <div className={`${styles.badge} ${styles.carLoan}`} tabIndex={0} aria-label="Car Loans">
                                         <Image src="/car.png" alt="Car" width={20} height={20} />
                                         <span style={{ color: '#343434', fontFamily: 'Metropolis, sans-serif', fontWeight: '700' }}>Car Loans</span>
                                     </div>
-                                    <div className={`${styles.badge} ${styles.homeLoan}`}>
+                                    <div className={`${styles.badge} ${styles.homeLoan}`} tabIndex={0} aria-label="Home Loan">
                                         <Image src="/House.png" alt="Home" width={20} height={20} />
                                         <span style={{ color: '#343434', fontFamily: 'Metropolis, sans-serif', fontWeight: '700' }}>Home Loan</span>
                                     </div>
@@ -146,7 +146,7 @@ export default function HeroSection() {
                     </Row>
 
                     {/* Contact and Social Media Icons - Bottom of Section */}
-                    <Row className="mt-5">
+                    <Row className="mt-4 mb-0">
                         <Col className="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start gap-3">
                             <div className="d-flex align-items-center gap-2">
                                 <Image src="/call.png" alt="Call" width={18} height={18} />
