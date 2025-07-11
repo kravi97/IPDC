@@ -1,11 +1,9 @@
-@import '../styles/_variable';
-
 .features {
     padding: 4rem 0;
     background-color: #f8f9fa;
 
     h2 {
-        color: $text-dark;
+        color: #333;
     }
 
     p {
@@ -29,6 +27,6 @@
 
     .icon {
         font-size: 2rem;
-        color: $primary-color;
+        color: #e61c81;
     }
 }

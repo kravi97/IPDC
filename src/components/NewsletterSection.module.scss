@@ -1,11 +1,9 @@
-@import '../styles/variable';
-
 .newsletter {
     padding: 4rem 0;
     background-color: #FEF9FC;
 
     h4 {
-        color: $text-dark;
+        color: #333;
     }
 
     .formWrapper {
