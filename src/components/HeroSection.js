@@ -92,9 +92,9 @@ export default function HeroSection() {
                                         maxWidth: '100%'
                                     }}>Chase Your Dream with us</h1>
                                     <p className="text-muted mt-3 mb-4" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.1rem)' }}>The harder you work for something, the greater you'll feel when you achieve it.</p>
-                                    <div className="mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start w-100">
+                                    <div className="mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
                                         <Button
-                                            className="btn btn-danger w-100 w-sm-auto"
+                                            className="btn btn-danger  w-sm-auto"
                                             style={{
                                                 backgroundColor: '#e61c81',
                                                 border: 'none',
@@ -117,7 +117,7 @@ export default function HeroSection() {
                                             APPLY ONLINE
                                         </Button>
                                         <Button
-                                            className="btn btn-outline-primary w-100 w-sm-auto"
+                                            className="btn btn-outline-primary  w-sm-auto"
                                             style={{
                                                 borderRadius: '4px',
                                                 minWidth: '160px',
