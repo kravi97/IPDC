@@ -629,6 +629,42 @@
 
 // Adjust badges if needed (already styled above)
 
+@media (max-width: 1200px) {
+    .imageContainer {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .imageContainer {
+        max-width: 400px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .imageContainer {
+        max-width: 90vw;
+        min-width: 0;
+        padding: 0;
+    }
+}
+
+.heroRight {
+    //   background: #ffe6f3;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
 @media (max-width: 991px) {
     .heroSplit {
         flex-direction: column;
@@ -637,15 +673,23 @@
 
     .heroLeft,
     .heroRight {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
         min-height: unset;
     }
 
+    .heroLeft {
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
     .heroRight {
-        min-height: 350px;
-        align-items: flex-end;
+        align-items: center;
         justify-content: center;
+        min-height: 300px;
+        padding-bottom: 2rem;
     }
 
     .imageContainer {
@@ -653,8 +697,74 @@
         width: 100%;
         max-width: 100%;
         min-width: 0;
-        margin-top: 2rem;
+        margin-top: 1rem;
         justify-content: center;
         align-items: flex-end;
+        padding: 0;
+    }
+
+    .img-fluid {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .badges {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 1rem;
+        width: 100%;
+        position: static;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 8px 16px;
+        margin: 0 4px;
+    }
+
+    .navbarCustomContainer {
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .heroLeft,
+    .heroRight {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .heroLeft {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .heroRight {
+        padding-bottom: 1rem;
+    }
+
+    .badges {
+        display: none; // Hide badges for very small screens
+    }
+
+    .imageContainer {
+        margin-top: 0.5rem;
+        padding: 0;
+    }
+
+    .heroContent {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbarCustomContainer {
+        padding: 0 4px;
+    }
+
+    .navbarCollapse {
+        top: 60px;
     }
 }

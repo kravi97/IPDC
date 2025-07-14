@@ -160,7 +160,16 @@ export default function HeroSection() {
                     {/* Right Side: Pink background, family image, badges */}
                     <div className={styles.heroRight}>
                         <div className={styles.imageContainer}>
-                            <Image src="/family.png" alt="Family" width={883} height={654} className="img-fluid" style={{ maxWidth: '100%', height: 'auto', objectFit: 'cover' }} />
+                            <div style={{ position: 'relative', width: '100%', aspectRatio: '883/654', minHeight: '200px' }}>
+                                <Image
+                                    src="/family.png"
+                                    alt="Family"
+                                    fill
+                                    style={{ objectFit: 'contain' }}
+                                    sizes="(max-width: 991px) 100vw, 784px"
+                                    priority
+                                />
+                            </div>
                             {/* Floating Badges */}
                             <div className={styles.badges}>
                                 <div className={`${styles.badge} ${styles.carLoan}`} tabIndex={0} aria-label="Car Loans">
