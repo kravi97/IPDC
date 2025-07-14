@@ -26,7 +26,7 @@ export default function HeroSection() {
                             padding: 0,
                         }}
                     >
-                        <div className={styles.navbarBrand}>
+                        <div className={styles.navbarBrand} style={{ marginLeft: '5%' }}>
                             <Image src="/nav-left-image.png" alt="Logo" width={120} height={40} className="hero-logo" />
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
@@ -37,7 +37,7 @@ export default function HeroSection() {
                                 aria-controls="navbarNav"
                                 aria-expanded={isNavOpen}
                                 aria-label="Toggle navigation menu"
-                                style={{ marginLeft: 'auto', display: 'block' }}
+                                style={{ marginLeft: 'auto' }}
                             >
                                 <span className={styles.navbarTogglerIcon}></span>
                             </button>
