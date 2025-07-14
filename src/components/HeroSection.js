@@ -18,7 +18,7 @@ export default function HeroSection() {
                 <nav className={styles.navbar} role="navigation" aria-label="Main Navigation">
                     <div className={styles.navbarCustomContainer}>
                         <div className={styles.navbarBrand}>
-                            <Image src="/nav-left-image.png" alt="Logo" width={120} height={40} style={{ marginLeft: '95px' }} />
+                            <Image src="/nav-left-image.png" alt="Logo" width={120} height={40} className="hero-logo" />
                         </div>
                         <button
                             className={styles.navbarToggler}
@@ -80,14 +80,14 @@ export default function HeroSection() {
                                         maxWidth: '100%'
                                     }}>Chase Your Dream with us</h1>
                                     <p className="text-muted mt-3 mb-4" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.1rem)' }}>The harder you work for something, the greater you'll feel when you achieve it.</p>
-                                    <div className="mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
+                                    <div className="mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start w-100">
                                         <Button
-                                            className="btn btn-danger"
+                                            className="btn btn-danger w-100 w-sm-auto"
                                             style={{
                                                 backgroundColor: '#e61c81',
                                                 border: 'none',
                                                 borderRadius: '4px',
-                                                width: 'clamp(140px, 40vw, 157px)',
+                                                minWidth: '140px',
                                                 height: '46px',
                                                 padding: '13px 22px',
                                                 fontFamily: 'Metropolis, sans-serif',
@@ -105,10 +105,10 @@ export default function HeroSection() {
                                             APPLY ONLINE
                                         </Button>
                                         <Button
-                                            className="btn btn-outline-primary"
+                                            className="btn btn-outline-primary w-100 w-sm-auto"
                                             style={{
                                                 borderRadius: '4px',
-                                                width: 'clamp(160px, 45vw, 188px)',
+                                                minWidth: '160px',
                                                 height: '46px',
                                                 padding: '13px 20px',
                                                 fontFamily: 'Metropolis, sans-serif',
@@ -133,7 +133,7 @@ export default function HeroSection() {
                             </Row>
                             {/* Contact and Social Media Icons - Bottom of Section */}
                             <Row className="mt-4 mb-0">
-                                <Col style={{ paddingTop: '15%' }} className="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start gap-3">
+                                <Col style={{ paddingTop: undefined }} className="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start gap-3">
                                     <div className="d-flex align-items-center gap-2">
                                         <Image src="/call.png" alt="Call" width={18} height={18} />
                                         <span className="fw-bold" style={{ color: '#010101', fontSize: 'clamp(15px, 3vw, 17px)' }}>16519</span>

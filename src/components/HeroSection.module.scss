@@ -83,7 +83,7 @@
 .navbarNav {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 46px;
     list-style: none;
     margin: 0 auto;
     padding: 0;
@@ -164,7 +164,7 @@
 }
 
 .heroBg {
-    background: linear-gradient(90deg, #fff 56.5%, #ffe6f3 54.5%);
+    background: linear-gradient(90deg, #fff 54.5%, #ffe6f3 54.5%);
     width: 100%; // changed from 100vw to 100%
     overflow-x: hidden;
     box-sizing: border-box; // ensure padding/margin are included
@@ -302,7 +302,7 @@
 
 .carLoan {
     top: 12%;
-    left: 8%;
+    left: 5%;
     background: #fff;
     color: #e61c81;
     border: 2px solid #fff;
@@ -766,5 +766,31 @@
 
     .navbarCollapse {
         top: 60px;
+    }
+}
+
+.hero-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    .hero-logo {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        display: block;
+        width: 100px !important;
+        height: auto !important;
+    }
+
+    .btn-danger,
+    .btn-outline-primary {
+        width: 100% !important;
+        min-width: unset !important;
+        margin-bottom: 8px;
+    }
+
+    .d-flex.align-items-center.gap-2.justify-content-center.justify-content-md-start.gap-3 {
+        padding-top: 0 !important;
     }
 }
