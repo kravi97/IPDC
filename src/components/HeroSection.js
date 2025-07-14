@@ -16,20 +16,32 @@ export default function HeroSection() {
         <div className={styles.heroBg} style={{ overflowX: 'hidden' }}>
             <section className={styles.hero}>
                 <nav className={styles.navbar} role="navigation" aria-label="Main Navigation">
-                    <div className={styles.navbarCustomContainer}>
+                    <div
+                        className={styles.navbarCustomContainer}
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            width: '100%',
+                            padding: 0,
+                        }}
+                    >
                         <div className={styles.navbarBrand}>
                             <Image src="/nav-left-image.png" alt="Logo" width={120} height={40} className="hero-logo" />
                         </div>
-                        <button
-                            className={styles.navbarToggler}
-                            type="button"
-                            onClick={toggleNav}
-                            aria-controls="navbarNav"
-                            aria-expanded={isNavOpen}
-                            aria-label="Toggle navigation menu"
-                        >
-                            <span className={styles.navbarTogglerIcon}></span>
-                        </button>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                            <button
+                                className={styles.navbarToggler}
+                                type="button"
+                                onClick={toggleNav}
+                                aria-controls="navbarNav"
+                                aria-expanded={isNavOpen}
+                                aria-label="Toggle navigation menu"
+                                style={{ marginLeft: 'auto', display: 'block' }}
+                            >
+                                <span className={styles.navbarTogglerIcon}></span>
+                            </button>
+                        </div>
                         <div className={`${styles.navbarCollapse} ${isNavOpen ? styles.show : ''}`} id="navbarNav">
                             <ul className={styles.navbarNav}>
                                 <li><a href="#" className={styles.navLink}>Retail</a></li>
@@ -133,25 +145,36 @@ export default function HeroSection() {
                             </Row>
                             {/* Contact and Social Media Icons - Bottom of Section */}
                             <Row className="mt-4 mb-0">
-                                <Col style={{ paddingTop: undefined }} className="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start gap-3">
-                                    <div className="d-flex align-items-center gap-2">
-                                        <Image src="/call.png" alt="Call" width={18} height={18} />
-                                        <span className="fw-bold" style={{ color: '#010101', fontSize: 'clamp(15px, 3vw, 17px)' }}>16519</span>
-                                    </div>
-                                    <span style={{ color: '#CCCCCC' }} >|</span>
-                                    <div className="d-flex gap-2">
-                                        <a href="#" className={styles.iconLink}>
-                                            <Image src="/facebook.png" alt="Facebook" width={18} height={18} />
-                                        </a>
-                                        <a href="#" className={styles.iconLink}>
-                                            <Image src="/youtube.png" alt="YouTube" width={18} height={18} />
-                                        </a>
-                                        <a href="#" className={styles.iconLink}>
-                                            <Image src="/linkedin.png" alt="LinkedIn" width={18} height={18} />
-                                        </a>
-                                        <a href="#" className={styles.iconLink}>
-                                            <Image src="/instagram.png" alt="Instagram" width={18} height={18} />
-                                        </a>
+                                <Col style={{ paddingTop: undefined }}>
+                                    <div
+                                        style={{
+                                            display: 'flex',
+                                            flexDirection: 'row',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            gap: '18px',
+                                            width: '100%',
+                                        }}
+                                    >
+                                        <div className="d-flex align-items-center gap-2">
+                                            <Image src="/call.png" alt="Call" width={18} height={18} />
+                                            <span className="fw-bold" style={{ color: '#010101', fontSize: 'clamp(15px, 3vw, 17px)' }}>16519</span>
+                                        </div>
+                                        <span style={{ color: '#CCCCCC', height: '24px', borderLeft: '1px solid #CCCCCC', display: 'inline-block', margin: '0 8px' }}></span>
+                                        <div className="d-flex gap-2">
+                                            <a href="#" className={styles.iconLink}>
+                                                <Image src="/facebook.png" alt="Facebook" width={18} height={18} />
+                                            </a>
+                                            <a href="#" className={styles.iconLink}>
+                                                <Image src="/youtube.png" alt="YouTube" width={18} height={18} />
+                                            </a>
+                                            <a href="#" className={styles.iconLink}>
+                                                <Image src="/linkedin.png" alt="LinkedIn" width={18} height={18} />
+                                            </a>
+                                            <a href="#" className={styles.iconLink}>
+                                                <Image src="/instagram.png" alt="Instagram" width={18} height={18} />
+                                            </a>
+                                        </div>
                                     </div>
                                 </Col>
                             </Row>
