@@ -193,6 +193,12 @@
     }
 }
 
+@media (max-width: 991px) {
+    .heroBg {
+        background: #fff;
+    }
+}
+
 .hero {
     padding-bottom: 0.5rem;
     position: relative;
