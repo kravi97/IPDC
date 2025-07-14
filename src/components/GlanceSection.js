@@ -24,8 +24,8 @@ export default function GlanceSection() {
                         <div className={styles.textWrapper}>
                             <h4 className="fw-bold">IPDC at a Glance</h4>
                             <p className="text-muted mt-3">
-                                IPDC Finance Limited (previously known as "Industrial Promotion and Development
-                                Company of Bangladesh Limited") is the first private sector financial institution of
+                                IPDC Finance Limited (previously known as &quot;Industrial Promotion and Development
+                                Company of Bangladesh Limited&quot;) is the first private sector financial institution of
                                 the country established in 1981 by a distinguished group of shareholders namely
                                 International Finance Corporation (IFC), USA, German Investment and Development Company
                                 (DEG), Germany, The Aga Khan Fund for Economic Development (AKFED), Switzerland,

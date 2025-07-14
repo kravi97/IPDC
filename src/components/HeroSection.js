@@ -91,7 +91,7 @@ export default function HeroSection() {
                                         color: '#010101',
                                         maxWidth: '100%'
                                     }}>Chase Your Dream with us</h1>
-                                    <p className="text-muted mt-3 mb-4" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.1rem)' }}>The harder you work for something, the greater you'll feel when you achieve it.</p>
+                                    <p className="text-muted mt-3 mb-4" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.1rem)' }}>The harder you work for something, the greater you&apos;ll feel when you achieve it.</p>
                                     <div className="mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
                                         <Button
                                             className="btn btn-danger  w-sm-auto"
