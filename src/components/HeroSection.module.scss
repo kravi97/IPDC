@@ -1,11 +1,29 @@
 // Contact/social section alignment
+
+// Contact/social section alignment
 .contactSocial {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 18px;
+    position: absolute;
+    left: 5vw;
+    bottom: 32px;
+    z-index: 10;
+}
+
+@media (max-width: 991px) {
+    .contactSocial {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        left: unset;
+        bottom: unset;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 991px) {

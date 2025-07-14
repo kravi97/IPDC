@@ -145,28 +145,6 @@ export default function HeroSection() {
                             </Row>
                             {/* ...existing code... */}
                         </Container>
-                        {/* Contact and Social Media Icons - Bottom of Left Section */}
-                        <div className={`mt-4 mb-0 ${styles.contactSocial}`}>
-                            <div className="d-flex align-items-center gap-2">
-                                <Image src="/call.png" alt="Call" width={18} height={18} />
-                                <span className="fw-bold" style={{ color: '#010101', fontSize: 'clamp(15px, 3vw, 17px)' }}>16519</span>
-                            </div>
-                            <span style={{ color: '#CCCCCC', height: '24px', borderLeft: '1px solid #CCCCCC', display: 'inline-block', margin: '0 8px' }}></span>
-                            <div className="d-flex gap-2">
-                                <a href="#" className={styles.iconLink}>
-                                    <Image src="/facebook.png" alt="Facebook" width={18} height={18} />
-                                </a>
-                                <a href="#" className={styles.iconLink}>
-                                    <Image src="/youtube.png" alt="YouTube" width={18} height={18} />
-                                </a>
-                                <a href="#" className={styles.iconLink}>
-                                    <Image src="/linkedin.png" alt="LinkedIn" width={18} height={18} />
-                                </a>
-                                <a href="#" className={styles.iconLink}>
-                                    <Image src="/instagram.png" alt="Instagram" width={18} height={18} />
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     {/* ...existing code... */}
                     {/* Right Side: Pink background, family image, badges */}
@@ -193,6 +171,28 @@ export default function HeroSection() {
                                     <span style={{ color: '#343434', fontFamily: 'Metropolis, sans-serif', fontWeight: '700' }}>Home Loan</span>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    {/* Contact and Social Media Icons - Bottom Left for Desktop, Centered for Mobile */}
+                    <div className={`mt-4 mb-0 ${styles.contactSocial}`}>
+                        <div className="d-flex align-items-center gap-2">
+                            <Image src="/call.png" alt="Call" width={18} height={18} />
+                            <span className="fw-bold" style={{ color: '#010101', fontSize: 'clamp(15px, 3vw, 17px)' }}>16519</span>
+                        </div>
+                        <span style={{ color: '#CCCCCC', height: '24px', borderLeft: '1px solid #CCCCCC', display: 'inline-block', margin: '0 8px' }}></span>
+                        <div className="d-flex gap-2">
+                            <a href="#" className={styles.iconLink}>
+                                <Image src="/facebook.png" alt="Facebook" width={18} height={18} />
+                            </a>
+                            <a href="#" className={styles.iconLink}>
+                                <Image src="/youtube.png" alt="YouTube" width={18} height={18} />
+                            </a>
+                            <a href="#" className={styles.iconLink}>
+                                <Image src="/linkedin.png" alt="LinkedIn" width={18} height={18} />
+                            </a>
+                            <a href="#" className={styles.iconLink}>
+                                <Image src="/instagram.png" alt="Instagram" width={18} height={18} />
+                            </a>
                         </div>
                     </div>
                 </div>
