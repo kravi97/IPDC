@@ -133,7 +133,7 @@ export default function HeroSection() {
                             </Row>
                             {/* Contact and Social Media Icons - Bottom of Section */}
                             <Row className="mt-4 mb-0">
-                                <Col className="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start gap-3">
+                                <Col style={{ paddingTop: '15%' }} className="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start gap-3">
                                     <div className="d-flex align-items-center gap-2">
                                         <Image src="/call.png" alt="Call" width={18} height={18} />
                                         <span className="fw-bold" style={{ color: '#010101', fontSize: 'clamp(15px, 3vw, 17px)' }}>16519</span>
@@ -165,7 +165,7 @@ export default function HeroSection() {
                             <div className={styles.badges}>
                                 <div className={`${styles.badge} ${styles.carLoan}`} tabIndex={0} aria-label="Car Loans">
                                     <Image src="/car.png" alt="Car" width={20} height={20} />
-                                    <span style={{ color: '#343434', fontFamily: 'Metropolis, sans-serif', fontWeight: '700' }}>Car Loans</span>
+                                    <span className='ms-1' style={{ color: '#343434', fontFamily: 'Metropolis, sans-serif', fontWeight: '700' }}>Car Loans</span>
                                 </div>
                                 <div className={`${styles.badge} ${styles.homeLoan}`} tabIndex={0} aria-label="Home Loan">
                                     <Image src="/House.png" alt="Home" width={20} height={20} />
